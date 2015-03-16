@@ -11,7 +11,9 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    //This is the easiest way to setup AAWindow.
     var window: UIWindow? = {
+        //Here you can define a cornerRadius for the active window, which will animate to zero when inactive. (Just set this to 0 for no cornerRadius)
         let window = AAWindow(frame: UIScreen.mainScreen().bounds, cornerRadius: 8)
         return window
         }()

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65B64A93-5CD4-4E48-AF58-67E5F5CB7714</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AAWindowExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A9A204D6A1237E96B34B25FCA9043230887D9E4</key>
+		<string>https://github.com/aaronabentheuer/AAWindow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AAWindowExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A9A204D6A1237E96B34B25FCA9043230887D9E4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aaronabentheuer/AAWindow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A9A204D6A1237E96B34B25FCA9043230887D9E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A9A204D6A1237E96B34B25FCA9043230887D9E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AAWindowExample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

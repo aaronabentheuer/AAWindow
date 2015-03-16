@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    //Everything in the ViewController (except the subscribing to notifications) is just for the demo-application. Setting up happens in "AppDelegate.swift".
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +32,11 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
             
-            stateLabel.text = "Control Center is opened."
-            
             UIView.animateWithDuration(0.15, animations: {
+                
+                stateLabel.text = "Control Center is opened."
+                stateLabel.textColor = UIColor.blackColor()
+                
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.frame.height * 0.15
                 }
@@ -41,9 +45,11 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationDidBecomeActiveNotification, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
             
-            stateLabel.text = "Application is active."
-            
             UIView.animateWithDuration(0.15, animations: {
+                
+                stateLabel.text = "Application is active."
+                stateLabel.textColor = UIColor.blackColor()
+                
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.center.y
                 }
@@ -52,7 +58,12 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithoutControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
             
-            stateLabel.text = "Application is inactive."
+            UIView.animateWithDuration(0.15, animations: {
+                
+                stateLabel.text = "Application is inactive."
+                stateLabel.textColor = UIColor.orangeColor()
+                
+            })
         })
     }
 
