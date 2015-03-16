@@ -13,6 +13,7 @@
 		800980261AB5F27000A937E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800980251AB5F27000A937E6 /* Images.xcassets */; };
 		800980291AB5F27000A937E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800980271AB5F27000A937E6 /* LaunchScreen.xib */; };
 		800980351AB5F27100A937E6 /* AAWindowExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800980341AB5F27100A937E6 /* AAWindowExampleTests.swift */; };
+		8009803F1AB5F27C00A937E6 /* AAWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009803E1AB5F27C00A937E6 /* AAWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8009802E1AB5F27100A937E6 /* AAWindowExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAWindowExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		800980331AB5F27100A937E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800980341AB5F27100A937E6 /* AAWindowExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWindowExampleTests.swift; sourceTree = "<group>"; };
+		8009803E1AB5F27C00A937E6 /* AAWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAWindow.swift; path = ../AAWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				8009801E1AB5F27000A937E6 /* AppDelegate.swift */,
 				800980201AB5F27000A937E6 /* ViewController.swift */,
+				8009803E1AB5F27C00A937E6 /* AAWindow.swift */,
 				800980221AB5F27000A937E6 /* Main.storyboard */,
 				800980251AB5F27000A937E6 /* Images.xcassets */,
 				800980271AB5F27000A937E6 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				800980211AB5F27000A937E6 /* ViewController.swift in Sources */,
 				8009801F1AB5F27000A937E6 /* AppDelegate.swift in Sources */,
+				8009803F1AB5F27C00A937E6 /* AAWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AAWindowExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AAWindowExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

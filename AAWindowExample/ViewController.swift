@@ -9,17 +9,56 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        var cameraImageView : UIImageView = UIImageView(frame: UIScreen.mainScreen().bounds)
+        var cameraImage = UIImage(named: "CameraImage")
+        cameraImageView.image = cameraImage
+        cameraImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        cameraImageView.alpha = 0
+        self.view.addSubview(cameraImageView)
+        
+        var stateLabel : UILabel = UILabel(frame: UIScreen.mainScreen().bounds)
+        stateLabel.font = UIFont(name: "Avenir-Heavy", size: 20)
+        stateLabel.textAlignment = .Center
+        stateLabel.text = "Application is active."
+        self.view.addSubview(stateLabel)
+        
+        NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
+            
+            stateLabel.text = "Control Center is opened."
+            
+            UIView.animateWithDuration(0.15, animations: {
+                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
+                    stateLabel.center.y = self.view.frame.height * 0.15
+                }
+            })
+        })
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationDidBecomeActiveNotification, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
+            
+            stateLabel.text = "Application is active."
+            
+            UIView.animateWithDuration(0.15, animations: {
+                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
+                    stateLabel.center.y = self.view.center.y
+                }
+            })
+        })
+        
+        NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithoutControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
+            
+            stateLabel.text = "Application is inactive."
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
