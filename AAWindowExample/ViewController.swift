@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.darkGrayColor()
         
         var cameraImageView : UIImageView = UIImageView(frame: UIScreen.mainScreen().bounds)
         var cameraImage = UIImage(named: "CameraImage")
@@ -35,12 +35,25 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Control Center is opened."
-                stateLabel.textColor = UIColor.blackColor()
+                stateLabel.textColor = UIColor(red: 225/255, green: 255/255, blue: 204/255, alpha: 1)
                 
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.frame.height * 0.15
                 }
             })
+            
+            var fadeInOutAnimation : CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
+            fadeInOutAnimation.fromValue = 1
+            fadeInOutAnimation.toValue = 1.1
+            fadeInOutAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            fadeInOutAnimation.duration = 0.5
+            fadeInOutAnimation.autoreverses = true
+            fadeInOutAnimation.repeatCount = HUGE
+            fadeInOutAnimation.removedOnCompletion = false
+            fadeInOutAnimation.fillMode = kCAFillModeBoth
+            
+            stateLabel.layer.shouldRasterize = true
+            stateLabel.layer.addAnimation(fadeInOutAnimation, forKey: "scale")
         })
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationDidBecomeActiveNotification, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
@@ -48,12 +61,23 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Application is active."
-                stateLabel.textColor = UIColor.blackColor()
+                stateLabel.textColor = UIColor(red: 225/255, green: 255/255, blue: 204/255, alpha: 1)
                 
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.center.y
                 }
             })
+            
+            var fadeInOutAnimation : CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
+            fadeInOutAnimation.toValue = 1
+            fadeInOutAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            fadeInOutAnimation.duration = 0.5
+            fadeInOutAnimation.autoreverses = false
+            fadeInOutAnimation.removedOnCompletion = false
+            fadeInOutAnimation.fillMode = kCAFillModeBoth
+            
+            stateLabel.layer.shouldRasterize = true
+            stateLabel.layer.addAnimation(fadeInOutAnimation, forKey: "scale")
         })
         
         NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithoutControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
@@ -61,10 +85,14 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Application is inactive."
-                stateLabel.textColor = UIColor.orangeColor()
+                stateLabel.textColor = UIColor.lightGrayColor()
                 
             })
         })
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
     override func didReceiveMemoryWarning() {

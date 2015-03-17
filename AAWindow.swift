@@ -15,6 +15,7 @@ class AAWindow: UIWindow {
     private var cornerRadiusAnimationDuration : Double = 0.15
     
     private var willOpenControlCenter : Bool = false
+    private var controlCenterOpened : Bool = false
     var timer : NSTimer = NSTimer()
     
     //This notification will fire when the user opens Control Center.
@@ -38,16 +39,18 @@ class AAWindow: UIWindow {
     
     //This will fire once the application becomes active (i.e. on startup or on return from Multitasking Switcher)
     @objc private func applicationDidBecomeActive (notification : NSNotification) {
-        self.layer.cornerRadius = activeCornerRadius
-        //Animates back to the active cornerRadius.
-        self.layer.addAnimation(animateCornerRadius(inactiveCornerRadius, toValue: activeCornerRadius, withDuration: cornerRadiusAnimationDuration, forKey: "cornerRadius"), forKey: "cornerRadius")
+        
+        if (controlCenterOpened) {
+            controlCenterOpened = false
+        } else {
+            self.layer.cornerRadius = activeCornerRadius
+            //Animates back to the active cornerRadius.
+            self.layer.addAnimation(animateCornerRadius(inactiveCornerRadius, toValue: activeCornerRadius, withDuration: cornerRadiusAnimationDuration, forKey: "cornerRadius"), forKey: "cornerRadius")
+        }
     }
     
     //This will fire once the application becomes inactive (i.e. user opens Multitasking Switcher, Control Center, Notification Center…)
     @objc private func applicationWillResignActive (notification : NSNotification) {
-        
-        self.layer.cornerRadius = inactiveCornerRadius
-        self.layer.addAnimation(animateCornerRadius(activeCornerRadius, toValue: inactiveCornerRadius, withDuration: cornerRadiusAnimationDuration, forKey: "cornerRadius"), forKey: "cornerRadius")
         
         //willOpenControlCenter is true for a short period of time when the user touches in the bottom area of the screen. If in this period of time "applicationWillResignActive" is called it's highly likely (basically certain) that the user has launched Control Center.
         if (willOpenControlCenter) {
@@ -59,8 +62,12 @@ class AAWindow: UIWindow {
             }
             
             willOpenControlCenter = false
+            controlCenterOpened = true
         } else {
             NSNotificationCenter.defaultCenter().postNotification(applicationWillResignActiveWithoutControlCenterNotification)
+            
+            self.layer.cornerRadius = inactiveCornerRadius
+            self.layer.addAnimation(animateCornerRadius(activeCornerRadius, toValue: inactiveCornerRadius, withDuration: cornerRadiusAnimationDuration, forKey: "cornerRadius"), forKey: "cornerRadius")
         }
     }
     

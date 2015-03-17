@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "800980181AB5F27000A937E6"
-               BuildableName = "AAWindowExample.app"
-               BlueprintName = "AAWindowExample"
-               ReferencedContainer = "container:AAWindowExample.xcodeproj">
+               BuildableName = "AAWindow.app"
+               BlueprintName = "AAWindow"
+               ReferencedContainer = "container:AAWindow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8009802D1AB5F27100A937E6"
-               BuildableName = "AAWindowExampleTests.xctest"
-               BlueprintName = "AAWindowExampleTests"
-               ReferencedContainer = "container:AAWindowExample.xcodeproj">
+               BuildableName = "AAWindowTests.xctest"
+               BlueprintName = "AAWindowTests"
+               ReferencedContainer = "container:AAWindow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8009802D1AB5F27100A937E6"
-               BuildableName = "AAWindowExampleTests.xctest"
-               BlueprintName = "AAWindowExampleTests"
-               ReferencedContainer = "container:AAWindowExample.xcodeproj">
+               BuildableName = "AAWindowTests.xctest"
+               BlueprintName = "AAWindowTests"
+               ReferencedContainer = "container:AAWindow.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "800980181AB5F27000A937E6"
-            BuildableName = "AAWindowExample.app"
-            BlueprintName = "AAWindowExample"
-            ReferencedContainer = "container:AAWindowExample.xcodeproj">
+            BuildableName = "AAWindow.app"
+            BlueprintName = "AAWindow"
+            ReferencedContainer = "container:AAWindow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "800980181AB5F27000A937E6"
-            BuildableName = "AAWindowExample.app"
-            BlueprintName = "AAWindowExample"
-            ReferencedContainer = "container:AAWindowExample.xcodeproj">
+            BuildableName = "AAWindow.app"
+            BlueprintName = "AAWindow"
+            ReferencedContainer = "container:AAWindow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "800980181AB5F27000A937E6"
-            BuildableName = "AAWindowExample.app"
-            BlueprintName = "AAWindowExample"
-            ReferencedContainer = "container:AAWindowExample.xcodeproj">
+            BuildableName = "AAWindow.app"
+            BlueprintName = "AAWindow"
+            ReferencedContainer = "container:AAWindow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

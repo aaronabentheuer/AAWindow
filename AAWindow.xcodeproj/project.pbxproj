@@ -10,10 +10,10 @@
 		8009801F1AB5F27000A937E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009801E1AB5F27000A937E6 /* AppDelegate.swift */; };
 		800980211AB5F27000A937E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800980201AB5F27000A937E6 /* ViewController.swift */; };
 		800980241AB5F27000A937E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800980221AB5F27000A937E6 /* Main.storyboard */; };
-		800980261AB5F27000A937E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800980251AB5F27000A937E6 /* Images.xcassets */; };
 		800980291AB5F27000A937E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800980271AB5F27000A937E6 /* LaunchScreen.xib */; };
 		800980351AB5F27100A937E6 /* AAWindowExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800980341AB5F27100A937E6 /* AAWindowExampleTests.swift */; };
 		8009803F1AB5F27C00A937E6 /* AAWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009803E1AB5F27C00A937E6 /* AAWindow.swift */; };
+		800980411AB8982D00A937E6 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800980401AB8982D00A937E6 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		800980191AB5F27000A937E6 /* AAWindowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAWindowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		800980191AB5F27000A937E6 /* AAWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8009801D1AB5F27000A937E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8009801E1AB5F27000A937E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		800980201AB5F27000A937E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		800980231AB5F27000A937E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		800980251AB5F27000A937E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		800980281AB5F27000A937E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8009802E1AB5F27100A937E6 /* AAWindowExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAWindowExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8009802E1AB5F27100A937E6 /* AAWindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAWindowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		800980331AB5F27100A937E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800980341AB5F27100A937E6 /* AAWindowExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWindowExampleTests.swift; sourceTree = "<group>"; };
 		8009803E1AB5F27C00A937E6 /* AAWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAWindow.swift; path = ../AAWindow.swift; sourceTree = "<group>"; };
+		800980401AB8982D00A937E6 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 		8009801A1AB5F27000A937E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				800980191AB5F27000A937E6 /* AAWindowExample.app */,
-				8009802E1AB5F27100A937E6 /* AAWindowExampleTests.xctest */,
+				800980191AB5F27000A937E6 /* AAWindow.app */,
+				8009802E1AB5F27100A937E6 /* AAWindowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,8 +83,8 @@
 				800980201AB5F27000A937E6 /* ViewController.swift */,
 				8009803E1AB5F27C00A937E6 /* AAWindow.swift */,
 				800980221AB5F27000A937E6 /* Main.storyboard */,
-				800980251AB5F27000A937E6 /* Images.xcassets */,
 				800980271AB5F27000A937E6 /* LaunchScreen.xib */,
+				800980401AB8982D00A937E6 /* images.xcassets */,
 				8009801C1AB5F27000A937E6 /* Supporting Files */,
 			);
 			path = AAWindowExample;
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		800980181AB5F27000A937E6 /* AAWindowExample */ = {
+		800980181AB5F27000A937E6 /* AAWindow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 800980381AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowExample" */;
+			buildConfigurationList = 800980381AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindow" */;
 			buildPhases = (
 				800980151AB5F27000A937E6 /* Sources */,
 				800980161AB5F27000A937E6 /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = AAWindowExample;
+			name = AAWindow;
 			productName = AAWindowExample;
-			productReference = 800980191AB5F27000A937E6 /* AAWindowExample.app */;
+			productReference = 800980191AB5F27000A937E6 /* AAWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8009802D1AB5F27100A937E6 /* AAWindowExampleTests */ = {
+		8009802D1AB5F27100A937E6 /* AAWindowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8009803B1AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowExampleTests" */;
+			buildConfigurationList = 8009803B1AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowTests" */;
 			buildPhases = (
 				8009802A1AB5F27100A937E6 /* Sources */,
 				8009802B1AB5F27100A937E6 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				800980301AB5F27100A937E6 /* PBXTargetDependency */,
 			);
-			name = AAWindowExampleTests;
+			name = AAWindowTests;
 			productName = AAWindowExampleTests;
-			productReference = 8009802E1AB5F27100A937E6 /* AAWindowExampleTests.xctest */;
+			productReference = 8009802E1AB5F27100A937E6 /* AAWindowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 800980141AB5F27000A937E6 /* Build configuration list for PBXProject "AAWindowExample" */;
+			buildConfigurationList = 800980141AB5F27000A937E6 /* Build configuration list for PBXProject "AAWindow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				800980181AB5F27000A937E6 /* AAWindowExample */,
-				8009802D1AB5F27100A937E6 /* AAWindowExampleTests */,
+				800980181AB5F27000A937E6 /* AAWindow */,
+				8009802D1AB5F27100A937E6 /* AAWindowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800980411AB8982D00A937E6 /* images.xcassets in Resources */,
 				800980241AB5F27000A937E6 /* Main.storyboard in Resources */,
 				800980291AB5F27000A937E6 /* LaunchScreen.xib in Resources */,
-				800980261AB5F27000A937E6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		800980301AB5F27100A937E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 800980181AB5F27000A937E6 /* AAWindowExample */;
+			target = 800980181AB5F27000A937E6 /* AAWindow */;
 			targetProxy = 8009802F1AB5F27100A937E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -347,7 +347,7 @@
 				INFOPLIST_FILE = AAWindowExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AAWindow;
 			};
 			name = Debug;
 		};
@@ -358,7 +358,7 @@
 				INFOPLIST_FILE = AAWindowExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AAWindow;
 			};
 			name = Release;
 		};
@@ -376,8 +376,8 @@
 				);
 				INFOPLIST_FILE = AAWindowExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAWindowExample.app/AAWindowExample";
+				PRODUCT_NAME = AAWindowTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAWindow.app/AAWindow";
 			};
 			name = Debug;
 		};
@@ -391,15 +391,15 @@
 				);
 				INFOPLIST_FILE = AAWindowExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAWindowExample.app/AAWindowExample";
+				PRODUCT_NAME = AAWindowTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AAWindow.app/AAWindow";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		800980141AB5F27000A937E6 /* Build configuration list for PBXProject "AAWindowExample" */ = {
+		800980141AB5F27000A937E6 /* Build configuration list for PBXProject "AAWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				800980361AB5F27100A937E6 /* Debug */,
@@ -408,21 +408,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		800980381AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowExample" */ = {
+		800980381AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				800980391AB5F27100A937E6 /* Debug */,
 				8009803A1AB5F27100A937E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		8009803B1AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowExampleTests" */ = {
+		8009803B1AB5F27100A937E6 /* Build configuration list for PBXNativeTarget "AAWindowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8009803C1AB5F27100A937E6 /* Debug */,
 				8009803D1AB5F27100A937E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
