@@ -33,6 +33,11 @@ UIWindow subclass to enable behavior like adaptive round-corners &amp; detecting
   * `applicationWillResignActiveWithControlCenter` will fire when the user opens Control Center.
   * `applicationWillResignActiveWithoutControlCenter` will fire whenever `applicationWillResignActive` is called (i.e. the user opening Notification Center, …) except when the user opens Control Center.
 
+##Example Project
+The very simple example project hopefully demonstrates the gist of using "AAWindow" and is thoroughly commented. If you have any questions don't hesitate contacting me [@aaronabentheuer](http://www.twitter.com/aaronabentheuer).
+
+![screencast](https://github.com/aaronabentheuer/AAWindow/blob/master/screencast.gif)
+
 ##License
 Released under the **MIT License**.
 Copyright © 2015 [Aaron Abentheuer](http://www.aaronabentheuer.com).
