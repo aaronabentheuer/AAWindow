@@ -1,5 +1,5 @@
 # AAWindow
-UIWindow subclass to enable behavior like adaptive round-corners &amp; detecting when Control Center is opened.
+This UIWindow-subclass is a collection of features that are intended to further polish the apps that we use daily. I've been using it in almost all of my projects for university and will update it constantly as I come across new features. UIWindow is often overlooked and still bears a lot of potential. Stay tuned.
 
 ##Features
 * **Adaptive rounded corners for UIWindow.**
