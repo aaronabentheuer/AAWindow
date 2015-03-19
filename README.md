@@ -1,5 +1,6 @@
 # AAWindow
-This UIWindow-subclass is a collection of features that are intended to further polish the apps that we use daily. I've been using it in almost all of my projects for university and will update it constantly as I come across new features. UIWindow is often overlooked and still bears a lot of potential. Stay tuned.
+This UIWindow-subclass is a collection of features that are intended to further polish the apps that we use daily.
+For now I've included two features that I haven't seen before and I thought might be interesting for a lot of people: **Adaptive App cornerRadius & detecting when the user opens Control Center** *(to provide assistance for example when setting up AirPlay)*. I've been using it in almost all of my projects for university and will update it constantly as I come across new features. UIWindow is often overlooked and still bears a lot of potential. Stay tuned.
 
 ##Features
 * **Adaptive rounded corners for UIWindow.**
