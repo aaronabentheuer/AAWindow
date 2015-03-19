@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Control Center is opened."
-                stateLabel.textColor = UIColor(red: 225/255, green: 255/255, blue: 204/255, alpha: 1)
+                stateLabel.textColor = UIColor(red: 115/255, green: 255/255, blue: 204/255, alpha: 1)
                 
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.frame.height * 0.15
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Application is active."
-                stateLabel.textColor = UIColor(red: 225/255, green: 255/255, blue: 204/255, alpha: 1)
+                stateLabel.textColor = UIColor(red: 115/255, green: 255/255, blue: 204/255, alpha: 1)
                 
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.center.y
