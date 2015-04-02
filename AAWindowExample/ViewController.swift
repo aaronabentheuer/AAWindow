@@ -25,10 +25,14 @@ class ViewController: UIViewController {
         self.view.addSubview(cameraImageView)
         
         var stateLabel : UILabel = UILabel(frame: UIScreen.mainScreen().bounds)
+        stateLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         stateLabel.font = UIFont(name: "Avenir-Heavy", size: 20)
         stateLabel.textAlignment = .Center
         stateLabel.text = "Application is active."
+        stateLabel.sizeToFit()
         self.view.addSubview(stateLabel)
+        
+        self.view.addConstraints([NSLayoutConstraint(item: stateLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0), NSLayoutConstraint(item: stateLabel, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1, constant: 0)])
         
         NSNotificationCenter.defaultCenter().addObserverForName("applicationWillResignActiveWithControlCenter", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
             
@@ -36,6 +40,7 @@ class ViewController: UIViewController {
                 
                 stateLabel.text = "Control Center is opened."
                 stateLabel.textColor = UIColor(red: 115/255, green: 255/255, blue: 204/255, alpha: 1)
+                stateLabel.sizeToFit()
                 
                 if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
                     stateLabel.center.y = self.view.frame.height * 0.15
@@ -85,6 +90,7 @@ class ViewController: UIViewController {
             UIView.animateWithDuration(0.15, animations: {
                 
                 stateLabel.text = "Application is inactive."
+                stateLabel.sizeToFit()
                 stateLabel.textColor = UIColor.lightGrayColor()
                 
             })
