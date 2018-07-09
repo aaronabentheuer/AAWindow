@@ -4,7 +4,7 @@ For now I've included two features that I haven't seen before and I thought migh
 
 Setup is very easy. Just copy `AAWindow.swift` into your project and get started.
 
-##Features
+## Features
 * **Adaptive rounded corners for UIWindow.**
 
   Rounded corners on application frames have been very popular in the early days of iOS because they give you a feeling of the screen disappearing and the app blending with the device (just like nowadays on Apple Watch). Since iOS 7 though, rounded corners seemed to disappear. There are however still a few (even big-name) projects that use rounded corners for their app's window, one of the more popular being "Hyperlapse" by Facebook/Instagram. Hyperlapse looks really great (especially because there's not much of a UI at all), but once you take it to the Multitasking Switcher it starts to collide with iOS. One can clearly see tiny artefacts on each corner of the app-preview that ruin the effect. If you define a corner-radius in AAWindow it automatically animates it to `*.layer.cornerRadius = 0` once the app is in a inactive state and animates back once it's active again.
@@ -36,12 +36,12 @@ Setup is very easy. Just copy `AAWindow.swift` into your project and get started
   * `applicationWillResignActiveWithControlCenter` will fire when the user opens Control Center.
   * `applicationWillResignActiveWithoutControlCenter` will fire whenever `applicationWillResignActive` is called (i.e. the user opening Notification Center, …) except when the user opens Control Center.
 
-##Example Project
+## Example Project
 The very simple example project hopefully demonstrates the gist of using "AAWindow" and is thoroughly commented. If you have any questions don't hesitate contacting me [@aaronabentheuer](http://www.twitter.com/aaronabentheuer).
 
 ![screencast](https://github.com/aaronabentheuer/AAWindow/blob/master/screencast.gif)
 
-##License
+## License
 Released under the **MIT License**.
 Copyright © 2015 [Aaron Abentheuer](http://www.aaronabentheuer.com).
 
